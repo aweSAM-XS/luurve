@@ -48,7 +48,7 @@ h1 {
 .card {
     background: var(--clr-5);
     height: 75vh;
-    aspect-ratio: 1/1.5;
+    aspect-ratio: 1/1.75;
     border-radius: 1.5rem;
     text-align: center;
     color: aliceblue;
@@ -59,7 +59,7 @@ h1 {
 .card::after {
     content: '';
     position: absolute;
-    inset: -0.5rem;
+    inset: -0.25rem;
     z-index: -1;
     background: conic-gradient(
         from var(--gradient-angle),
