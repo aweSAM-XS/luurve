@@ -11,7 +11,13 @@
     --clr-4: rgb(78, 143, 240);
     --clr-5: #191c29;
     --clr-6: #212534;
-    --bg-gradient: linear-gradient(-45deg, pink, purple, red, yellow);
+    --bg-gradient: linear-gradient(
+        -45deg,
+        var(--clr-1),
+        var(--clr-2),
+        var(--clr-3),
+        var(--clr-4)
+    );
 }
 
 body {
@@ -35,26 +41,26 @@ h1 {
 }
 
 .container {
-	width: 80%;
-	padding: 0 20px;
+    width: 80%;
+    padding: 0 20px;
 }
 
 .card {
     background: var(--clr-5);
     height: 75vh;
-	aspect-ratio: 1/1.5;
+    aspect-ratio: 1/1.5;
     border-radius: 1.5rem;
     text-align: center;
     color: aliceblue;
-	position: relative;
+    position: relative;
 }
 
 .card::before,
 .card::after {
-    content: "";
+    content: '';
     position: absolute;
-    inset: -.5rem;
-	z-index: -1;
+    inset: -0.5rem;
+    z-index: -1;
     background: conic-gradient(
         from var(--gradient-angle),
         var(--clr-1),
@@ -87,10 +93,10 @@ h1 {
 }
 
 @keyframes rotation {
-	0% {
-		--gradient-angle: 0deg;
-	}
-	100% {
-		--gradient-angle: 360deg;
-	}
+    0% {
+        --gradient-angle: 0deg;
+    }
+    100% {
+        --gradient-angle: 360deg;
+    }
 }
