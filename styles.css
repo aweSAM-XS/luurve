@@ -22,7 +22,8 @@
 
 body {
     font-family: sans-serif;
-    max-height: 100vh;
+    /* max-height: 100vh; */
+    margin: 100px 0;
     background: var(--clr-6);
 }
 
@@ -40,10 +41,10 @@ h1 {
     place-content: center;
 }
 
-.container {
+/* .container {
     margin-bottom: 100px;
     padding-top: 100px;
-}
+} */
 
 .card {
     border-radius: 1.5rem;
@@ -87,8 +88,12 @@ h1 {
     line-height: 1.5rem;
     overflow-y: scroll;
     scrollbar-width: none;
-    height: 80vh;
+    height: 40vh;
     padding: 0 5px;
+}
+
+p {
+    min-height: 100%;
 }
 
 @keyframes body-gradient {
