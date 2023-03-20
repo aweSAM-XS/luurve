@@ -951,7 +951,6 @@ const poems = [
 
 function reload() {
     const index = Math.floor(Math.random() * (poems.length - 1));
-    console.log(index)
     const poem = poems[index];
     p.innerHTML = poem;
     poemElement.appendChild(p);
