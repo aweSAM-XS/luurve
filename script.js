@@ -1,4 +1,4 @@
-// const heart = document.querySelector('.heart');
+const heart = document.querySelector('.heart');
 const poemElement = document.querySelector('.poem');
 const p = document.createElement('p');
 const poems = [
@@ -964,4 +964,4 @@ function reload() {
 
 reload();
 
-// heart.addEventListener("click", reload);
+heart.addEventListener("click", reload);

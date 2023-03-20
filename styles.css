@@ -41,14 +41,12 @@ h1 {
 }
 
 .container {
-    width: 80%;
-    padding: 0 20px;
+    margin-bottom: 100px;
+    padding-top: 100px;
 }
 
 .card {
     border-radius: 1.5rem;
-    height: 85vh;
-    aspect-ratio: 1/1.75;
     background: var(--clr-5);
     text-align: center;
     color: aliceblue;
@@ -57,6 +55,8 @@ h1 {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    min-width: 65vw;
+    min-height: 75vh;
 }
 
 .card::before,
