@@ -46,13 +46,17 @@ h1 {
 }
 
 .card {
-    background: var(--clr-5);
-    height: 75vh;
-    aspect-ratio: 1/1.75;
     border-radius: 1.5rem;
+    height: 85vh;
+    aspect-ratio: 1/1.75;
+    background: var(--clr-5);
     text-align: center;
     color: aliceblue;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .card::before,
@@ -77,6 +81,10 @@ h1 {
 
 .card::after {
     filter: blur(5rem);
+}
+
+p {
+    line-height: 1.5rem;
 }
 
 @keyframes body-gradient {
