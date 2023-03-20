@@ -22,7 +22,7 @@
 
 body {
     font-family: sans-serif;
-    height: 100vh;
+    max-height: 100vh;
     background: var(--clr-6);
 }
 
@@ -55,8 +55,8 @@ h1 {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    min-width: 65vw;
-    min-height: 75vh;
+    width: 75vw;
+    height: 75vh;
 }
 
 .card::before,
@@ -83,8 +83,11 @@ h1 {
     filter: blur(5rem);
 }
 
-p {
+.poem {
     line-height: 1.5rem;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    height: 40vh;
 }
 
 @keyframes body-gradient {
