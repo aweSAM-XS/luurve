@@ -88,6 +88,7 @@ h1 {
     overflow-y: scroll;
     scrollbar-width: none;
     height: 40vh;
+    padding: 0 5px;
 }
 
 @keyframes body-gradient {
