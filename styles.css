@@ -82,16 +82,18 @@ h1 {
 .poem {
     line-height: 1.5rem;
     overflow-y: auto;
-    height: 40vh;
+    height: 50vh;
     padding: 0 5px;
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
-.poem::-webkit-scrollbar { 
-    width: 0;
-    height: 0;
-}
 
+@media screen and (min-width: 1024px){
+    .poem::-webkit-scrollbar { 
+        width: 0;
+        height: 0;
+    }
+}
 
 p {
     min-height: 100%;
