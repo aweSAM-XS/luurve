@@ -52,7 +52,7 @@ h1 {
     justify-content: space-around;
     align-items: center;
     width: 75vw;
-    height: 75vh;
+    height: 75svh;
 }
 
 .card::before,
@@ -82,7 +82,7 @@ h1 {
 .poem {
     line-height: 1.5rem;
     overflow-y: auto;
-    height: 50vh;
+    height: 50svh;
     padding: 0 5px;
     scrollbar-width: none;
     -ms-overflow-style: none;
